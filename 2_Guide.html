@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Tutor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            font-size: 26px;
+            font-weight: bold;
+            padding: 30px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+        .navigation {
+            text-align: right;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+        a {
+            margin-left: 10px;
+        }
+        a:link, a:visited {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        h1{
+          text-align: center;
+          margin-top: 100px;
+          margin-bottom: 70px;
+        }
+
+        .articles {
+          display: grid;
+          max-width: 1200px;
+          margin-inline: auto;
+          padding-inline: 15px;
+          grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+          gap: 24px;
+        }
+        
+        article {
+          position: relative;
+          border-radius: 16px;
+          background: #fff;
+          transform-origin: center;
+          transition: all 0.4s ease-in-out;
+          overflow: hidden;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        article a::after {
+          position: absolute;
+          inset-block: 0;
+          inset-inline: 0;
+          cursor: pointer;
+          content: "";
+        }
+
+        article h2 {
+          font-size: 20px;
+          letter-spacing: 0.06em;
+          color: var(--title-color);
+          transition: color 0.3s ease-out;
+          text-align: center;
+          margin-bottom: 20px
+        }
+
+        figure {
+          margin: 0;
+          padding: 0;
+          aspect-ratio: 16 / 9;
+          overflow: hidden;
+        }
+
+        article img {
+          max-width: 100%;
+          transform-origin: center;
+          transform: scale(var(--img-scale));
+          transition: transform 0.4s ease-in-out;
+        }
+
+        .article-body {
+          padding: 30px;
+        }
+
+        article a {
+          display: inline-flex;
+          align-items: center;
+          text-decoration: none;
+          color: #000000;
+        }
+
+        article a:focus {
+          outline: 1px dotted #000000;
+        }
+
+        article a .icon {
+          min-width: 24px;
+          width: 24px;
+          height: 24px;
+          margin-left: 5px;
+          transform: translateX(var(--link-icon-translate));
+          opacity: var(--link-icon-opacity);
+          transition: all 0.3s;
+        }
+
+        article:has(:hover, :focus) {
+          --img-scale: 1.1;
+          --title-color: #b6b6b6;
+          --link-icon-translate: 0;
+          --link-icon-opacity: 1;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+
+      </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">Perfume Tutor</a>
+      <div class="navigation">
+          <a href="1_list.html">인기 상품</a>
+          <a href="2_Guide.html">선택 가이드</a>
+          <a href="3_make.html">공방 지도</a>
+          <a href="4_Storage.html">보관 방법</a>
+          <a href="5_tip.html">사용할 때 Tip</a>
+      </div>
+  </div>
+      <h1>향수 선택 가이드</h1>
+      <section class="articles">
+
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="./img/g_1.jpg" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>지속력에 따라 고르기</h2>
+              <p>
+                향수의 지속력은 중요한 요소입니다. 만약 오랜 시간동안 향수 향기를 유지하길 원한다면, 오 드 뚜왈렛(EDT)보다는 오 드 빠르펭(EDP)를 선택하세요. 이러한 향수는 더 오래 지속되며 피부에 더 오래 남습니다.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div>
+            <figure>
+              <img src="./img/g_2.jpeg" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>향 종류에 따라 고르기</h2>
+              <p>
+                향의 종류는 개인적인 취향과 사용 목적에 따라 다를 수 있습니다. 시트러스 향은 상쾌하고 여름에 어울리며, 우디 향은 보온감을 주어 겨울에 적합합니다. 꽃향기는 로맨틱한 분위기를 조성하며, 스파이시 향은 자신감을 높여줄 수 있습니다.
+              </p>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="/img/g_3.jpeg"alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>계절/날씨에 따라 고르기</h2>
+              <p>
+                더웠을 때는 가볍고 상쾌한 향수를 선택하고, 추운 날씨에는 무거운 향수를 고려하세요. 봄과 여름에는 시트러스나 꽃향이 어울리며, 가을과 겨울에는 우디나 스파이시 향이 좋을 수 있습니다.
+              </p>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+  </body>
+</html>

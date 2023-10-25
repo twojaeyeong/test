@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>향수관리/보관방법</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 26px;
+            font-weight: bold;
+            padding: 30px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+
+        .navigation {
+            text-align: right;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+        a {
+            margin-left: 10px;
+        }
+
+        a:link, a:visited {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .block {
+            margin: 20px;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+        }
+
+        input[type='radio'] {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 20px;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .info {
+            background: #fff;
+            color: #000;
+            line-height: 2.0;
+            padding: 10px;
+            display: block;
+            overflow: hidden;
+            box-sizing: border-box;
+            max-height: 0;
+            transition: max-height 0.3s ease-in;
+            text-align: center;
+        }
+
+        input[type='radio']:checked + label .info {
+            max-height: 250px;
+        }
+
+        h4 {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        h4 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        ::selection {
+            background: #fff;
+            color: #222;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 28px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Perfume Tutor</a>
+        <div class="navigation">
+            <a href="1_list.html">인기 상품</a>
+            <a href="2_Guide.html">선택 가이드</a>
+            <a href="3_make.html">공방 지도</a>
+            <a href="4_Storage.html">보관 방법</a>
+            <a href="5_tip.html">사용할 때 Tip</a>
+        </div>
+    </div>
+
+    <h1><향수 보관방법></h1><br><br>
+
+    <div class="block">
+        <input type="radio" name="perfume" id="whenPurchased" checked />
+        <label for="whenPurchased">
+            <span>향수를 구입했을 때</span>
+            <div class="info">
+                <p>직사광선을 피하십시오 향수는 직사광선에 민감할 수 있으므로 직사광선이 닿지 않는 어두운 곳에 보관하세요.</p>
+                <p>온도와 습도 조절 향수는 고온과 습도가 높은 장소에서 손상을 입을 수 있으므로 18-24°C(64-75°F)의 안정된 환경을 유지하세요.</p>
+                <p>원본 패키지에 보관 원본 박스 또는 패키지에 보관하면 향수를 보호하고 향을 오래 유지하는 데 도움이 됩니다.</p>
+            </div>
+        </label>
+    </div>
+
+    <div class="block">
+        <input type="radio" name="perfume" id="whileUsing" />
+        <label for="whileUsing">
+            <span>향수를 사용 중일 때</span>
+            <div class="info">
+                <p>직사광선과 열에 노출하지 마십시오 향수 병을 직사광선과 열로부터 멀리 두어 향수의 품질을 유지하세요.</p>
+                <p>병을 밀봉 향수 병을 사용한 후에는 병을 잘 밀봉하여 공기가 들어가지 않도록 하세요. 이렇게 하면 증발을 줄이고 향수의 향을 오래 유지할 수 있습니다.</p>
+                <p>냉장고에 저장하지 마세요 향수를 냉장고에 저장하지 마세요. 온도 변화로 인해 향수의 품질에 영향을 미칠 수 있습니다.</p>
+            </div>
+        </label>
+    </div>
+
+    <div class="block">
+        <input type="radio" name="perfume" id="whenFinished" />
+        <label for="whenFinished">
+            <span>향수를 다 썼을 때</span>
+            <div class="info">
+                <p>병을 재활용하거나 폐기 더 이상 사용하지 않는 향수 병은 재활용하거나 지정된 방식으로 폐기하세요.</p>
+                <p>빈 병을 깨끗하게 씻어야 합니다. 남아 있는 향수나 오일이 병에 남아 있으면 새로운 향수와 반응할 수 있습니다.</p>
+            </div>
+        </label>
+    </div>
+
+</body>
+</html>
