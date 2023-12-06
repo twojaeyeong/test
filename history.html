@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    @font-face {
+      font-family: 'NotoSansKR';
+      src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      font-family: 'NotoSansKR';
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 30px;
+      display: inline-block;
+      vertical-align: top; /* 상단 정렬 */
+    }
+
+    nav a:hover {
+      font-weight: bold;
+    }
+
+    .center-content {
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    .main_text {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    footer {
+        position: fixed;
+      text-align: center;
+      padding: 20px;
+      bottom: 0;
+      width: 100%;
+      background-color: #1d1d1d;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100px; /* 조절 가능한 로고 크기 */
+      height: auto;
+      cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능한 것처럼 보이게 함 */
+    }
+
+    .timeline {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin-top: 50px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .timeline-item {
+      text-align: center;
+      flex: 1;
+      position: relative;
+    }
+
+    .timeline--date {
+      color: #999;
+      font-family: 'NotoSansKR';
+      font-size: 14px;
+    }
+
+    .timeline--description {
+      margin-top: 20px;
+    }
+
+    .timeline--line {
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: #555;
+      top: 50%;
+      z-index: -1;
+      transform: translateY(-50%);
+    }
+
+    .timeline-item:not(:last-child) .timeline--line {
+      width: calc(100% - 50%);
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .timeline-item:hover {
+      transform: scale(1.05);
+    }
+
+    #contents{
+        margin-top: 200px;
+    }
+    
+    
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <!-- 로고 이미지를 index.html로 이동하도록 링크 설정 -->
+    <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo"></a>
+    <a href="made_by.html">MADE BY</a>
+    <a href="history.html">HISTORY</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="download.html">DOWNLOAD</a>
+  </nav>
+
+  <section id="contents">
+    <div class="center-content">
+      <div class="main_text">
+        <h3>TIME LINE</h3>
+      </div>
+
+      <img src="./img/line.png">
+
+      <ul class="timeline">
+        <li class="timeline-item">
+          <span class="timeline--date">2022년 2월</span>
+          <div class="timeline--description">
+            길형진 디자이너, 프리텐다드 서체 개발을 시작
+          </div>
+        </li>
+        
+        <li class="timeline-item">
+          <span class="timeline--date">2022년 5월</span>
+          <div class="timeline--description">
+            프리텐다드의 기본적인 윤곽을 완성
+          </div>
+        </li>
+        
+        <li class="timeline-item">
+          <span class="timeline--date">2022년 6월</span>
+          <div class="timeline--description">
+            프리텐다드 서체를 무료로 배포<br/>출시 직후부터 큰 인기를 끌며 누적 다운로드 수가 100만 건을 돌파
+          </div>
+        </li>
+
+        <li class="timeline-item">
+            <span class="timeline--date">2023년 6월</span>
+            <div class="timeline--description">
+                프리텐다드를 2로 업데이트 진행
+            </div>
+          </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2023 Pretendard. All rights reserved.
+  </footer>
+
+</body>
+</html>

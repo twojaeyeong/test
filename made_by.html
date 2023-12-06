@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    @font-face {
+      font-family: 'NotoSansKR';
+      src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      font-family: 'NotoSansKR';
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 30px;
+      display: inline-block;
+      vertical-align: top; /* 상단 정렬 */
+    }
+
+    nav a:hover {
+      font-weight: bold;
+    }
+
+    .center-content {
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    .main_text {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      bottom: 0;
+      width: 100%;
+      background-color: #1d1d1d;
+      position: fixed;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100px; /* 조절 가능한 로고 크기 */
+      height: auto;
+      cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능한 것처럼 보이게 함 */
+    }
+
+    .img_1{
+        margin-bottom: 100px;
+        margin-left: 200px;
+    }
+
+    table{
+        margin: 0 auto;
+    }
+
+
+    .text_1{
+        margin-right: 150px;
+        margin-left: 50px;
+        text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <!-- 로고 이미지를 index.html로 이동하도록 링크 설정 -->
+    <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo"></a>
+    <a href="made_by.html">MADE BY</a>
+    <a href="history.html">HISTORY</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="download.html">DOWNLOAD</a>
+  </nav>
+
+
+  <section id="contents">
+
+  <div class="center-content">
+    <div class="main_text">
+      <h3>MADE BY</h3>
+    </div>
+
+    <table>
+    <tr>
+        <td>
+            <div class="img_1">
+            <img src="./img/profile.png" width="600">
+            </div>
+        </td>
+        <td>
+            <div class="text_1">
+                <h1>길형길</h1> <br>
+
+                <p>나이: 26세 (1997년생)</p><br>
+
+                <p>[학력]</p><br>
+
+                <p>서울대학교 공과대학 산업공학과 (2022년 졸업)</p><br>
+
+                <p>[수상 내역]</p><br>
+                
+                <p>2022년 한국인터넷전문가협회 웹어워드 글꼴 부문 대상</p><br>
+                
+                <p>2022년 서울대학교 공과대학 창업경진대회 대상</p><br>
+                
+                <p>[특이 사항]</p><br>
+
+                <p>2022년 6월 오픈소스 글꼴인 '본고딕'과 '인터'(Inter)를 활용해 '프리텐다드'를 제작하고 인터넷에 무료로 배포<br>
+                프리텐다드는 출시 직후부터 큰 인기를 끌어 누적 다운로드 수가 100만 건을 돌파<br>
+                프리텐다드는 Google Fonts, Apple Fonts 등 주요 글꼴 플랫폼에도 등록<br>
+                프리텐다드 외에도 다양한 글꼴을 제작하고 있으며, 2023년 6월에는 '프리텐다드 2'를 출시<br>
+                한국의 대표적인 디지털 시스템 디자이너로, 앞으로 그의 활약이 기대됨</p><br>
+
+            </div>
+        </td>
+    </tr>
+
+    </table>
+
+    </section>
+
+  <footer>
+    © 2023 Pretendard. All rights reserved.
+  </footer>
+
+</body>
+</html>

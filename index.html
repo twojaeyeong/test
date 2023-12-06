@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    @font-face {
+      font-family: 'NotoSansKR';
+      src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      font-family: 'NotoSansKR';
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 30px;
+      display: inline-block;
+      vertical-align: top; /* 상단 정렬 */
+    }
+
+    nav a:hover {
+      font-weight: bold;
+    }
+
+    .center-content {
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    video {
+      max-width: 1000px;
+      margin-top: 40px;
+      height: auto;
+      text-align: center;
+    }
+
+    .main_text {
+      margin-top: 40px;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100px; /* 조절 가능한 로고 크기 */
+      height: auto;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      position: fixed;
+      background-color: #1d1d1d;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo" ></a>
+    <a href="made_by.html">MADE BY</a>
+    <a href="history.html">HISTORY</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="download.html">DOWNLOAD</a>
+  </nav>
+
+  <div class="center-content">
+    <video autoplay muted playsinline loop>
+      <source src="./img/bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="main_text">
+      <h3>Pretendard 그 서체의 시작은 언제부터 였을까.</h3>
+    </div>
+  </div>
+
+  <footer>
+    © 2023 Pretendard. All rights reserved.
+  </footer>
+
+</body>
+</html>

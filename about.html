@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    @font-face {
+      font-family: 'NotoSansKR';
+      src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      font-family: 'NotoSansKR';
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 30px 20px 0;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    nav a:hover {
+      font-weight: bold;
+    }
+
+    .center-content {
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100px;
+      height: auto;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #1d1d1d;
+      position: fixed;
+    }
+
+    #contents{
+        margin-top: 50px;
+    }
+
+    .wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        position: relative;
+        width: 325px;
+        height: 450px;
+        background: #000;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .poster {
+        position: relative;
+       
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+
+
+    .card:hover .poster::before {
+        bottom: 0;
+    }
+
+    .poster img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .3s;
+    }
+
+    .card:hover .poster img {
+        transform: scale(1.1);
+    }
+
+    .details {
+        position: absolute;
+        bottom: -100%;
+        height: auto;
+        padding: 20px;
+        background: #000a;
+        backdrop-filter: blur(16px) saturate(120%);
+        transition: .3s;
+        color: #fff;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .card:hover .details {
+        bottom: 0;
+    }
+
+    .details h1,
+    .details h2 {
+        font-weight: 700;
+    }
+
+    .details h1 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .details h2 {
+        font-weight: 400;
+        font-size: 1em;
+        margin-bottom: 10px;
+        opacity: .6;
+    }
+
+    .details .rating {
+        position: relative;
+        margin-bottom: 15px;
+        display: flex;
+        gap: .25em;
+    }
+
+    .details .rating i {
+        color: #e3c414;
+    }
+
+    .details .rating span {
+        margin-left: 0.25em;
+    }
+
+    .details .tags {
+        display: flex;
+        gap: .375em;
+        margin-bottom: .875em;
+        font-size: .85em;
+    }
+
+    .details .desc {
+        color: #fff;
+        opacity: .8;
+        line-height: 1.5;
+        margin-bottom: 1em;
+    }
+
+    .details .cast h3 {
+        margin-bottom: .5em;
+    }
+
+    .details .cast ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.625rem;
+        width: 100%;
+    }
+
+    .details .cast ul li {
+        list-style: none;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1.5px solid #fff;
+    }
+
+    .main_text {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo"></a>
+    <a href="made_by.html">MADE BY</a>
+    <a href="history.html">HISTORY</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="download.html">DOWNLOAD</a>
+  </nav>
+
+  <section id="contents">
+
+    <div class="main_text">
+        <h1>프리텐다드에 대해서</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="card">
+            <div class="poster"><img src="./img/Frame 26.png" ></div>
+            <div class="details">
+                <h1>폰트의 이야기</h1>
+                
+                <p class="desc">
+                    프리텐다드 폰트는 2022년 6월에 출시된 무료 한글 폰트입니다. 길형진 디자이너가 제작했으며, 가독성과 확장성, 범용성을 중점으로 개발되었습니다.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="poster"><img src="./img/Frame 27.png" ></div>
+            <div class="details">
+                <h1>폰트의 특징</h1>
+                
+                <p class="desc">
+                    프리텐다드는 가독성이 높은 폰트로 평가받고 있습니다. 글자 간 간격이 적당하고<br> 또한 확장성도 뛰어난 폰트입니다. 다양한 언어로 다양한 곳에서 사용할 수 있습니다.<br>
+                </p>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="poster"><img src="./img/Frame 28.png" ></div>
+            <div class="details">
+                <h1>폰트의 장점</h1>
+                
+                <p class="desc">
+                    가독성이 뛰어나 다양한 환경에서 사용할 수 있습니다. 
+                    확장성이 뛰어나 다양한 용도로 사용할 수 있습니다.
+                    무료로 배포되어 경제적입니다.
+                </p>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer>
+    © 2023 Pretendard. All rights reserved.
+  </footer>
+
+</body>
+</html>
