@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: 'NotoSansKR';
+      src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      font-family: 'NotoSansKR';
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 30px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    .center-content {
+      text-align: center;
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .main_text {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .round-box {
+      position: relative;
+      background-color: #1d1d1d;
+      border-radius: 5%;
+      width: 300px;
+      height: 350px;
+      margin: 20px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .box-content {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      width: 300px;
+      transition: opacity 0.3s;
+    }
+
+    .round-box:hover .box-content {
+      opacity: 0;
+    }
+
+    .box-content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .box-content.alt {
+      opacity: 0;
+    }
+
+    .round-box:hover .box-content.alt {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      bottom: 0;
+      width: 100%;
+      background-color: #1d1d1d;
+      position: fixed;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100px;
+      height: auto;
+      cursor: pointer;
+    }
+
+    #contents {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo"></a>
+    <a href="made_by.html">MADE BY</a>
+    <a href="history.html">HISTORY</a>
+    <a href="about.html">MORE</a>
+    <a href="services.html">SERVICES</a>
+    <a href="download.html">DOWNLOAD</a>
+  </nav>
+
+  <section id="contents">
+    <div class="main_text">
+      <h1>프리텐다드를 사용중인 플랫폼</h1>
+    </div>
+
+    <div class="center-content">
+      <div class="round-box">
+        <div class="box-content">
+          <img src="./img/Frame 31.png" alt="이미지1">
+        </div>
+        <div class="box-content alt">
+          <img src="./img/Frame 31-1.png" alt="대체 이미지1">
+        </div>
+      </div>
+
+      <div class="round-box">
+        <div class="box-content">
+          <img src="./img/Frame 24.png" alt="이미지2">
+        </div>
+        <div class="box-content alt">
+          <img src="./img/Frame 24-1.png" alt="대체 이미지2">
+        </div>
+      </div>
+
+      <div class="round-box">
+        <div class="box-content">
+          <img src="./img/Frame 25.png" alt="이미지3">
+        </div>
+        <div class="box-content alt">
+          <img src="./img/Frame 25-1.png" alt="대체 이미지3">
+        </div>
+      </div>
+
+      <div class="round-box">
+        <div class="box-content">
+          <img src="./img/Frame 23.png" alt="이미지3">
+        </div>
+        <div class="box-content alt">
+          <img src="./img/Frame 23-1.png" alt="대체 이미지4">
+        </div>
+      </div>
+
+      <div class="round-box">
+        <div class="box-content">
+          <img src="./img/Frame 30.png" alt="이미지5">
+        </div>
+        <div class="box-content alt">
+          <img src="./img/Frame 30-1.png" alt="대체 이미지5">
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    © 2023 Pretendard. All rights reserved.
+  </footer>
+
+</body>
+</html>
